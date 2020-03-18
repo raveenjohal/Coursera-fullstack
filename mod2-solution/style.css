@@ -1,0 +1,112 @@
+/**** BASE STYLES ****/
+*{
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom: 40px;
+	font-weight:bold;
+	font-size:28px;
+	text-align: center;
+}
+
+p {
+	border:1px solid black;
+	font-size:16;
+	font-family: Helvetica;
+	width: 90%
+	height:150px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 60px 10px 10px 10px;
+
+}
+
+#p1 {
+	background-color:#E5E8E8;
+}
+#p2{
+	background-color:#E5E8E8;
+}
+#p3{
+	background-color:#E5E8E8;
+}
+
+#title1{
+	background-color:#F5B7B1;
+	float:right;
+	padding:7px 40px 7px 40px;
+	font-size:20px;
+	margin-top: 16px;
+}
+
+#title2{
+	background-color:#F39C12;
+	float:right;
+	padding:7px 40px 7px 40px;
+	font-size:20px;
+	margin-top: 16px;
+}
+
+#title3{
+	background-color:#F4D03F;
+	float:right;
+	padding:7px 40px 7px 40px;
+	font-size:20px;
+	margin-top: 16px;
+}
+
+/** background colors for beef, chicken, sushi:   ; **/
+
+.row {
+	width: 100%;
+}
+
+/** LARGE DEVICES **/
+@media (min-width: 992px) {
+	.col-lg-1, .col-lg-2, .col-lg-3 {
+		float: left;
+	}
+	.col-lg-1 {
+		width: 33.33%;
+	}
+	.col-lg-2 {
+		width: 33.33%;
+	}
+	.col-lg-3 {
+		width: 33.33%;
+	}
+}
+
+/** MEDIUM DEVICES **/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-1, .col-md-2, .col-md-3 {
+		float: left;
+	}
+	.col-md-1 {
+		width: 50%;
+	}
+	.col-md-2 {
+		width: 50%
+	}
+	.col-md-3 {
+		width: 100%
+	}
+}
+
+/** SMALL DEVICES **/
+@media (max-width: 767px) {
+	.col-sm-1, .col-sm-2, .col-sm-3 {
+		float:left;
+	}
+	.col-sm-1 {
+		width: 100%
+	}
+	.col-sm-2 {
+		width: 100%
+	}
+	.col-sm-3 {
+		width: 100%
+	}
+}

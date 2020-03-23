@@ -7,97 +7,6 @@
     <title>Raveen's Restaurant</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-
-    <style> 
-    	/**** BASE STYLES ****/
-		*{
-		box-sizing: border-box;
-		}
-
-		h2 {                                       /** our menu **/ 
-		font-family:Arial, Helvetica, sans-serif;
-		margin-bottom: 40px;
-		font-weight:bold;
-		font-size:28px;
-		text-align: center;
-		}
-
-		p {                       /** all paragraphs **/
-		font-size:16;
-		font-family: Helvetica;
-		width: 90%
-		margin-right: 10px;
-		margin-left: 10px;
-		padding: 10px 10px 10px 10px;
-		}
-
-		.row { 					/** chicken and lorem **/
-		width: 100%;
-		background-color:#E5E8E8;
-		}
-
-		#p1 { 					/** lorem **/
-		height:1000px;
-		}
-
-		#title1{                /** chicken **/ 
-		padding:7px 20px 7px 40px;
-		font-size:20px;
-		margin-top: 16px;
-		}
-
-		.center {
-			text-align-last: center;
-		}
-
-		.navbar-brand {
- 			padding-top: 25px;
-		}
-		.navbar-brand h1 { /* Restaurant name */
-			color: black;
-			font-size: 1.5em;
-			font-weight: bold;
-			margin-top: 0;
-			margin-bottom: 0;
-			line-height: .75;
-		}
-
-		.navbar-brand a:hover, .navbar-brand a:focus {
-			text-decoration: none;
-		}
-
-		#nav-list {
-		  margin-top: 10px;
-		}
-		
-		#nav-list a {
-		  color: #951C49;
-		  text-align: center;
-		}
-		
-		#nav-list a:hover {
-		  background: #E7E7E7;
-		}
-		
-		#nav-list a span {
-		  font-size: 1.8em;
-		}
-
-		.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  			border: 1px solid #61122f;
-		}
-		.navbar-header button.navbar-toggle {
-  			clear: both;
-  			margin-top: -30px;
-		}
-
-		/** LARGE DEVICES **/
-		@media (min-width: 992px) {
-			.col-xs-12 {
-			float: left;
-			}
-		}
-    </style>
 </head>
 
 <body>
@@ -105,58 +14,55 @@
 		<nav id="header-nav" class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="index.html" class="pull-left visible-sm"></a>
-				
-				<div class="navbar-brand">
-				<a href="index.html"><h1>Food, LLC</h1></a>
+					<a href="index.html" class="pull-left visible-md visible-lg"></a>
+					
+					<div class="navbar-brand">
+						<a href="index.html"><h1>Food, LLC</h1></a>
+					</div>
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+		          	</button>
+		        </div> <!-- end of navbar-header div --> 
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+		        	<ul id="nav-list" class="nav navbar-nav navbar-right">
+		            	<li>
+		            		<a href="#">Chicken</a>
+		            	</li>
+		            	<li>
+		            		<a href="#">Beef</a>
+		            	</li>
+		            	<li>
+		            		<a href="#">Sushi</a>
+		            	</li>
+		        	</ul><!-- #nav-list -->
+	        	</div><!-- .collapse .navbar-collapse -->
 			</div>
-
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          	</button>
-          	</div>
-
-			<div id="collapsable-nav" class="collapse navbar-collapse">
-	           <ul id="nav-list" class="nav navbar-nav navbar-right">
-	             <li>
-	              <a href="#">
-	                <br class="hidden-xs">Chicken</a>
-	            </li>
-	            <li>
-	              <a href="#">
-	                <br class="hidden-xs">Beef</a>
-	            </li>
-	            <li>
-	              <a href="#">
-	                </span><br class="hidden-xs">Sushi</a>
-	          </ul><!-- #nav-list -->
-        	</div><!-- .collapse .navbar-collapse -->
-
-          </nav>
-      </header>
+		</nav>
+    </header>
 
         <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="jquery-2.1.4.min.js"></script>
-  <script src="bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  	<script src="jquery-2.1.4.min copy.js"></script> <!-- check this number with local -->
+  	<script src="bootstrap.min.js"></script>
+  	<script src="script.js"></script> <!-- maybe delete this row -->
 
 
-<div id="main-content" class="container">
-	<h2 id="menu-categories-title" class="text-center">Our Menu</h2>
+	<div id="main-content" class="container">
+		<h2 id="menu-categories-title" class="text-center">Our Menu</h2>
 
-	<section class="row">
-		<div class="col-sm-12">
-			<div class="center">
-				<p id="title1">Chicken</p>
+		<section class="row">
+			<div class="col-sm-12">
+				<div class="center">
+					<p id="title1">Chicken</p>
+				</div>
+				<p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum hendrerit laoreet. Pellentesque neque sapien, bibendum eget rhoncus sed, congue nec dui. Pellentesque justo nulla, cursus ut hendrerit eu, imperdiet ac urna. Pellentesque ullamcorper, ante nec feugiat mollis, sem lorem luctus libero, vitae gravida ipsum diam id ligula. Aliquam ac placerat nisi. Curabitur placerat leo convallis justo tincidunt consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum hendrerit laoreet. Pellentesque neque sapien, bibendum eget rhoncus sed, congue nec dui. Pellentesque justo nulla, cursus ut hendrerit eu, imperdiet ac urna. Pellentesque ullamcorper, ante nec feugiat mollis, sem lorem luctus libero, vitae gravida ipsum diam id ligula. Aliquam ac placerat nisi. Curabitur placerat leo convallis justo tincidunt consequat.
+				</p>
 			</div>
-			<p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum hendrerit laoreet. Pellentesque neque sapien, bibendum eget rhoncus sed, congue nec dui. Pellentesque justo nulla, cursus ut hendrerit eu, imperdiet ac urna. Pellentesque ullamcorper, ante nec feugiat mollis, sem lorem luctus libero, vitae gravida ipsum diam id ligula. Aliquam ac placerat nisi. Curabitur placerat leo convallis justo tincidunt consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum hendrerit laoreet. Pellentesque neque sapien, bibendum eget rhoncus sed, congue nec dui. Pellentesque justo nulla, cursus ut hendrerit eu, imperdiet ac urna. Pellentesque ullamcorper, ante nec feugiat mollis, sem lorem luctus libero, vitae gravida ipsum diam id ligula. Aliquam ac placerat nisi. Curabitur placerat leo convallis justo tincidunt consequat.
-	</p>
+		</section>
 	</div>
-
-</div>
-
 </body>
 </html>

@@ -1,88 +1,88 @@
 /**** BASE STYLES ****/
-		*{
-		box-sizing: border-box;
-		}
-
-		h2 {                                       /** our menu **/ 
-		font-family:Arial, Helvetica, sans-serif;
-		margin-bottom: 40px;
-		font-weight:bold;
-		font-size:28px;
-		text-align: center;
-		}
-
-		p {                       /** all paragraphs **/
-		font-size:16;
-		font-family: Helvetica;
-		width: 90%
-		margin-right: 10px;
-		margin-left: 10px;
-		padding: 10px 10px 10px 10px;
-		}
-
-		.row { 					/** chicken and lorem **/
-		width: 100%;
-		background-color:#E5E8E8;
-		}
-
-		#p1 { 					/** lorem **/
-		height:1000px;
-		}
-
-		#title1{                /** chicken **/ 
-		padding:7px 20px 7px 40px;
-		font-size:20px;
-		margin-top: 16px;
-		}
-
-		.center {
-			text-align-last: center;
-		}
-
-		.navbar-brand {
- 			padding-top: 25px;
-		}
-		.navbar-brand h1 { /* Restaurant name */
-			color: black;
-			font-size: 1.5em;
-			font-weight: bold;
-			margin-top: 0;
-			margin-bottom: 0;
-			line-height: .75;
-		}
-
-		.navbar-brand a:hover, .navbar-brand a:focus {
-			text-decoration: none;
-		}
-
-		#nav-list {
-		  margin-top: 10px;
-		}
-		
-		#nav-list a {
-		  color: #951C49;
-		  text-align: center;
-		}
-		
-		#nav-list a:hover {
-		  background: #E7E7E7;
-		}
-		
-		#nav-list a span {
-		  font-size: 1.8em;
-
-		.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  			border: 1px solid #61122f;
-		}
-		.navbar-header button.navbar-toggle {
-  			clear: both;
-  			margin-top: -30px;
-		}
+*{
+box-sizing: border-box;
 }
 
-		/** LARGE DEVICES **/
-		@media (min-width: 992px) {
-			.col-xs-12 {
-			float: left;
-			}
-		}
+h2 {                                       /** our menu **/ 
+font-family:Arial, Helvetica, sans-serif;
+margin-bottom: 40px;
+font-weight:bold;
+font-size:28px;
+text-align: center;
+}
+
+p {                       /** all paragraphs **/
+font-size:16;
+font-family: Helvetica;
+width: 90%
+margin-right: 10px;
+margin-left: 10px;
+padding: 10px 10px 10px 10px;
+}
+
+.row { 					/** chicken and lorem **/
+width: 100%;
+background-color:#E5E8E8;
+}
+
+#p1 { 					/** lorem **/
+height:1000px;
+}
+
+#title1{                /** chicken **/ 
+padding:7px 20px 7px 40px;
+font-size:20px;
+margin-top: 16px;
+}
+
+.center {
+text-align-last: center;
+}
+
+.navbar-brand {
+ padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+color: black;
+font-size: 1.5em;
+font-weight: bold;
+margin-top: 0;
+margin-bottom: 0;
+line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+text-decoration: none;
+}
+
+#nav-list {
+margin-top: 10px;
+}
+		
+#nav-list a {
+color: #951C49;
+text-align: center;
+}
+		
+#nav-list a:hover {
+background: #E7E7E7;
+}
+		
+#nav-list a span {
+font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+clear: both;
+margin-top: -30px;
+}
+
+/** LARGE DEVICES **/
+@media (min-width: 992px) {
+.col-xs-12 {
+float: left;
+}
+}
